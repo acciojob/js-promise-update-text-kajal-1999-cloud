@@ -1,13 +1,16 @@
 //your JS code here. If required.
 function test(){
 	let prom = new prom((resolve) => {
-		setTimeOut(() => {
-			resolve("hello world");
-		}, 1000)
+		setTimeout(() => {
+			resolve("Hello, world!");
+		}, 1000);
 	});
-
-	promise.then((data) => {
-		let output = document.getElementById("output");
-		output.textContent = data ;
-	})
 }
+
+function updateElement(){
+	test().then((data) => {
+		const output= document.getElementById("output");
+		output.textContent = data ;
+	});
+}
+updateElement();
