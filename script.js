@@ -1,6 +1,6 @@
 //your JS code here. If required.
 function test(){
-	let prom = new prom((resolve) => {
+	return new prom((resolve) => {
 		setTimeout(() => {
 			resolve("Hello, world!");
 		}, 1000);
