@@ -1,5 +1,6 @@
 //your JS code here. If required.
 function test(){
+
 	return new prom((resolve) => {
 		setTimeout(() => {
 			resolve("Hello, world!");
@@ -9,7 +10,7 @@ function test(){
 
 function updateElement(){
 	test().then((data) => {
-		const output= document.getElementById("output");
+		let output= document.getElementById("output");
 		output.textContent = data ;
 	});
 }
