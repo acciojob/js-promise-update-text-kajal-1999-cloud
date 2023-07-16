@@ -13,5 +13,6 @@ function updateElement(){
 		let output= document.getElementById("output");
 		output.textContent = data ;
 	});
+
 }
 updateElement();
